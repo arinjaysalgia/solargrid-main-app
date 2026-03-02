@@ -1,0 +1,4 @@
+services:
+  solargrid-app:
+    ports:
+      - "3001:80"
