@@ -25,15 +25,15 @@ export default function About() {
   ];
 
   return (
-    <section id="about" className="py-20 bg-gradient-to-br from-gray-900 via-blue-950 to-black">
+    <section id="about" className="py-20 bg-gray-50">
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-16 items-center mb-20">
           <div>
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              About <span className="bg-gradient-to-r from-orange-500 to-blue-500 bg-clip-text text-transparent">SolarGrid</span>
+            <h2 className="text-4xl md:text-5xl font-bold text-blue-900 mb-6">
+              About <span className="text-orange-500">SolarGrid</span>
             </h2>
 
-            <div className="space-y-6 text-gray-300 leading-relaxed">
+            <div className="space-y-6 text-gray-600 leading-relaxed">
               <p className="text-lg">
                 Based in the heart of Indore, SolarGrid is a leading solar EPC (Engineering, Procurement, and Construction) company dedicated to making clean energy accessible to everyone.
               </p>
@@ -46,9 +46,9 @@ export default function About() {
                 As authorized distributors of Waaree and trusted partners with Adani Solar and Tata Power Solar, we bring you the best technology and support in the industry.
               </p>
 
-              <div className="bg-gradient-to-r from-orange-500/20 to-blue-600/20 border border-orange-500/30 rounded-xl p-6 mt-8">
-                <p className="text-white font-semibold mb-2">Our Commitment</p>
-                <p className="text-gray-300">
+              <div className="bg-orange-50 border border-orange-200 rounded-xl p-6 mt-8">
+                <p className="text-blue-900 font-semibold mb-2">Our Commitment</p>
+                <p className="text-gray-600">
                   Every project is backed by our promise of quality, reliability, and exceptional after-sales service. We don't just install solar panels – we build energy solutions that last decades.
                 </p>
               </div>
@@ -56,31 +56,31 @@ export default function About() {
           </div>
 
           <div className="relative">
-            <div className="absolute inset-0 bg-gradient-to-r from-orange-500 to-blue-600 rounded-3xl blur-3xl opacity-20"></div>
-            <div className="relative bg-gradient-to-br from-blue-900/50 to-black border border-orange-500/20 rounded-3xl p-8">
+            <div className="absolute inset-0 bg-orange-200 rounded-3xl blur-3xl opacity-40"></div>
+            <div className="relative bg-white border border-gray-200 rounded-3xl p-8 shadow-lg">
               <div className="grid grid-cols-2 gap-6">
-                <div className="bg-black/50 rounded-xl p-6 text-center border border-orange-500/20">
-                  <div className="text-4xl font-bold text-orange-400 mb-2">500+</div>
-                  <div className="text-gray-400 text-sm">Happy Customers</div>
+                <div className="bg-orange-50 rounded-xl p-6 text-center border border-orange-100">
+                  <div className="text-4xl font-bold text-orange-500 mb-2">500+</div>
+                  <div className="text-gray-500 text-sm">Happy Customers</div>
                 </div>
 
-                <div className="bg-black/50 rounded-xl p-6 text-center border border-blue-500/20">
-                  <div className="text-4xl font-bold text-blue-400 mb-2">50MW+</div>
-                  <div className="text-gray-400 text-sm">Installed Capacity</div>
+                <div className="bg-blue-50 rounded-xl p-6 text-center border border-blue-100">
+                  <div className="text-4xl font-bold text-blue-600 mb-2">2MW+</div>
+                  <div className="text-gray-500 text-sm">Installed Capacity</div>
                 </div>
 
-                <div className="bg-black/50 rounded-xl p-6 text-center border border-blue-500/20">
-                  <div className="text-4xl font-bold text-blue-400 mb-2">10+</div>
-                  <div className="text-gray-400 text-sm">Years Experience</div>
+                <div className="bg-blue-50 rounded-xl p-6 text-center border border-blue-100">
+                  <div className="text-4xl font-bold text-blue-600 mb-2">2+</div>
+                  <div className="text-gray-500 text-sm">Years Experience</div>
                 </div>
 
-                <div className="bg-black/50 rounded-xl p-6 text-center border border-orange-500/20">
-                  <div className="text-4xl font-bold text-orange-400 mb-2">100%</div>
-                  <div className="text-gray-400 text-sm">Satisfaction Rate</div>
+                <div className="bg-orange-50 rounded-xl p-6 text-center border border-orange-100">
+                  <div className="text-4xl font-bold text-orange-500 mb-2">100%</div>
+                  <div className="text-gray-500 text-sm">Satisfaction Rate</div>
                 </div>
               </div>
 
-              <div className="mt-8 bg-gradient-to-r from-orange-500 to-blue-600 rounded-xl p-6 text-center">
+              <div className="mt-8 bg-blue-900 rounded-xl p-6 text-center">
                 <p className="text-white font-semibold text-lg">Indore's Most Trusted Solar Partner</p>
                 <p className="text-white/80 text-sm mt-2">Certified by ISO & Government of India</p>
               </div>
@@ -92,13 +92,13 @@ export default function About() {
           {values.map((value, index) => (
             <div
               key={index}
-              className="bg-black/50 border border-orange-500/20 rounded-xl p-6 hover:border-orange-500 transition-all group"
+              className="bg-white border border-gray-200 rounded-xl p-6 hover:border-orange-400 hover:shadow-md transition-all group shadow-sm"
             >
-              <div className="bg-gradient-to-r from-orange-500 to-blue-600 w-12 h-12 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+              <div className="bg-orange-500 w-12 h-12 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                 <value.icon className="w-6 h-6 text-white" />
               </div>
-              <h3 className="text-white font-semibold mb-2">{value.title}</h3>
-              <p className="text-gray-400 text-sm">{value.description}</p>
+              <h3 className="text-blue-900 font-semibold mb-2">{value.title}</h3>
+              <p className="text-gray-500 text-sm">{value.description}</p>
             </div>
           ))}
         </div>
