@@ -1,4 +1,4 @@
-import { Facebook, Twitter, Linkedin, Instagram, Mail, Phone } from 'lucide-react';
+import { Facebook, Linkedin, Instagram, Mail, Phone } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -52,16 +52,13 @@ export default function Footer() {
             <div className="mt-6">
               <h4 className="text-white font-semibold mb-3">Follow Us</h4>
               <div className="flex space-x-3">
-                <a href="#" className="bg-white/10 border border-white/20 p-2 rounded-lg hover:border-orange-400 transition-all">
+                <a href="https://share.google/MKnx44gYIIYsPxxW0" target="_blank" rel="noopener noreferrer" className="bg-white/10 border border-white/20 p-2 rounded-lg hover:border-orange-400 transition-all">
                   <Facebook className="w-5 h-5 text-orange-400" />
                 </a>
-                <a href="#" className="bg-white/10 border border-white/20 p-2 rounded-lg hover:border-orange-400 transition-all">
-                  <Twitter className="w-5 h-5 text-orange-400" />
-                </a>
-                <a href="#" className="bg-white/10 border border-white/20 p-2 rounded-lg hover:border-orange-400 transition-all">
+                <a href="https://www.linkedin.com/company/solargridrenewables/" target="_blank" rel="noopener noreferrer" className="bg-white/10 border border-white/20 p-2 rounded-lg hover:border-orange-400 transition-all">
                   <Linkedin className="w-5 h-5 text-orange-400" />
                 </a>
-                <a href="#" className="bg-white/10 border border-white/20 p-2 rounded-lg hover:border-orange-400 transition-all">
+                <a href="https://www.instagram.com/solargridrenewables?igsh=YXByZHZjMWo1b3dl" target="_blank" rel="noopener noreferrer" className="bg-white/10 border border-white/20 p-2 rounded-lg hover:border-orange-400 transition-all">
                   <Instagram className="w-5 h-5 text-orange-400" />
                 </a>
               </div>
