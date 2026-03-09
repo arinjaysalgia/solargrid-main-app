@@ -1,3 +1,15 @@
 {
+  "redirects": [
+    {
+      "source": "/Login",
+      "destination": "https://quoatation-application.vercel.app/",
+      "permanent": false
+    },
+    {
+      "source": "/login",
+      "destination": "https://quoatation-application.vercel.app/",
+      "permanent": false
+    }
+  ],
   "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
 }
