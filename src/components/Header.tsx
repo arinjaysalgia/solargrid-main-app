@@ -25,6 +25,9 @@ export default function Header() {
             <button onClick={() => scrollToSection('about')} className="text-blue-900 hover:text-orange-500 transition-colors font-medium">
               About
             </button>
+            <a href="https://quoatation-application.vercel.app/" target="_blank" rel="noopener noreferrer" className="bg-white border-2 border-blue-900 text-blue-900 hover:bg-blue-900 hover:text-white px-6 py-2 rounded-lg transition-all font-medium">
+              Login
+            </a>
             <button onClick={() => scrollToSection('contact')} className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-lg shadow-md shadow-orange-500/30 hover:shadow-orange-500/50 transition-all font-medium">
               Contact Us
             </button>
